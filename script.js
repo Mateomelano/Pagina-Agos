@@ -4,9 +4,31 @@ const VOUCHER_CODE = "9/11/24"; // Código fijo del voucher
 function validarVoucher() {
     const input = document.getElementById("voucherInput").value;
     if (input === VOUCHER_CODE) {
-        alert("¡Voucher reclamado con éxito!");
+        Swal.fire({
+            title: "🎉 ¡Felicidades! 🎉",
+            text: "Has reclamado tu voucher con éxito. 💖",
+            icon: "success",
+            confirmButtonText: "Aceptar",
+            background: "#ffe6f2",
+            color: "#d63384",
+            confirmButtonColor: "#ff69b4",
+            backdrop: `
+                rgba(255, 182, 193, 0.4)
+                url("https://media.giphy.com/media/JUwliZWcyDmTQp9X6L/giphy.gif")
+                left top
+                no-repeat
+            `
+        });
     } else {
-        alert("Código incorrecto, intenta nuevamente.");
+        Swal.fire({
+            title: "💔 ¡Oops! 💔",
+            text: "Código incorrecto, intenta nuevamente.",
+            icon: "error",
+            confirmButtonText: "Reintentar",
+            background: "#fff0f5",
+            color: "#ff1493",
+            confirmButtonColor: "#ff69b4"
+        });
     }
 }
 
