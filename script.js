@@ -5,7 +5,7 @@ function validarVoucher() {
   if (input === VOUCHER_CODE) {
     Swal.fire({
       title: "🎉 ¡Felicidades! 🎉",
-      text: "Has reclamado tu voucher del amor eterno con éxito, aunque el mismo esta en vigencia desde el  9/11/24. 💖",
+      text: "Has reclamado tu voucher del amor con éxito, aunque el mismo esta en vigencia desde el  9/11/24. 💖",
       icon: "success",
       confirmButtonText: "Aceptar",
       background: "#ffe6f2",
